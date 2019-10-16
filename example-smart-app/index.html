@@ -127,10 +127,11 @@
 }).then(function(response) { 
                console.log(response)
 			   var responseLength = response.length;
-			   var obvText = "";
+			   var obvText = "<table>";
 			   for (var i=0;i<responseLength;i++) {
-					obvText += "<div>"+response[i].code.text+"</div>";
+					obvText += "<tr><td>"+response[i].code.text+"</td></tr>";
 			   }
+			   obvText = obvText+"</table>"
 			   document.getElementById("obvDiv").innerHTML = obvText;
 });
 			
