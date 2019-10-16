@@ -122,9 +122,14 @@
                                              'http://loinc.org|8480-6', 'http://loinc.org|2085-9',
                                              'http://loinc.org|2089-1', 'http://loinc.org|55284-4']
                               },
+                              date: "2017-01-01"
                }
-}).then(function(response) {
+}).then(function(response) { 
                console.log(response)
+			   var responseLength = response.length;
+			   for (var i=0;i<responseLength;i++) {
+			   <div id="obvDiv" class="dataDiv">this.response.code.text</div>
+			   }
 });
 			
 		}
