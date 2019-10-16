@@ -131,12 +131,12 @@
 			   
 			   for (var i=0;i<responseLength;i++) {
 					obvText += "<tr><td>"+response[i].code.text+"</td>";
-					if (response[i].code.text == "Blood Pressure"){
+					if (response[i].code.text == "Blood pressure"){
 						obvText += "<td>"+response[i].component[0].valueQuantity.value+"/"+response[i].component[1].valueQuantity.value+"</td></tr>";
 						}
 					else {
-					if(response[i].valueQuantity !== undefined) {
-						obvText += "<td>"+response[i].code.valueQuantity.value+"</td></tr>";
+						if(response[i].valueQuantity !== undefined){
+							obvText += "<td>"+response[i].code.valueQuantity.value+"</td></tr>";
 						}
 					}
 			   }
