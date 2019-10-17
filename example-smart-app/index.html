@@ -167,7 +167,7 @@
                         }
                     }
                 }
-                document.getElementById("demo-fin").innerHTML = response.name[0].text;
+                document.getElementById("demo-name").innerHTML = response.name[0].text;
                 document.getElementById("demo-gender").innerHTML = response.gender;
                 document.getElementById("demo-dob").innerHTML = response.birthDate
                 document.getElementById("demo-mrn").innerHTML = obvMRN;
@@ -189,7 +189,7 @@
                 console.log(response)
                 response = response[1];
 
-                document.getElementById("demo-name").innerHTML = response.location[0].location.display;
+                document.getElementById("demo-fin").innerHTML = response.location[0].location.display;
                 document.getElementById("demo-loc").innerHTML = response.identifier[0].value;
                 document.getElementById("demo-rfv").innerHTML = response.reason[0].text
 
