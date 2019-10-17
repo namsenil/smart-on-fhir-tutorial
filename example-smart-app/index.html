@@ -156,6 +156,14 @@
                 }*/
             }).then(function (response) { 
                 console.log(response)
+                var obvMRN = " "
+                var identifierLength = response[0].identfier.length;
+                for (var i=0;i<identifierLength;i++) {
+                    if (response[0].identfier[i].type.text== "MRN") {
+                        obvMRN += response[0].identifier[i].value;
+                    }
+                }
+                document.getElementById("demo-mrn") = obvMRN;
 		 });
 		}
 	}
