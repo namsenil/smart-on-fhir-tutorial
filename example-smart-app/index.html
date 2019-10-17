@@ -167,7 +167,11 @@
                         }
                     }
                 }
+                document.getElementById("demo-name").innerHTML = response.name[0].text;
+                document.getElementById("demo-gender").innerHTML = response.gender;
+                document.getElementById("demo-dob").innerHTML = response.birthDate
                 document.getElementById("demo-mrn").innerHTML = obvMRN;
+
 		 });
 		}
 	}
