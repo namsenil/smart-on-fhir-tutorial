@@ -124,8 +124,8 @@
                               },
                }
 		}).then(function(response) { 
-/*               console.log(response)
-			   var responseLength = response.length;
+             console.log(response)
+/*			   var responseLength = response.length;
 			   var obvText = "<table>";
 			   
 			   for (var i=0;i<responseLength;i++) {
@@ -140,8 +140,8 @@
 					}
 			   }
 			   obvText = obvText+"</table>";
-			   document.getElementById("obvDiv").innerHTML = obvText;
-        });*/
+			   document.getElementById("obvDiv").innerHTML = obvText;*/
+        })
         	patientApi.fetchAll({
                 type: 'Patient',
   /*              query: {
@@ -156,7 +156,7 @@
                 }*/
             }).then(function (response) { 
                 console.log(response)
-		 });	
+		 });
 		}
 	}
 	function notReady(response) {
