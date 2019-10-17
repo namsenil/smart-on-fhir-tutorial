@@ -189,8 +189,8 @@
                 console.log(response)
                 response = response[1];
 
-                document.getElementById("demo-fin").innerHTML = response.location[0].location.display;
-                document.getElementById("demo-loc").innerHTML = response.identifier[0].value;
+                document.getElementById("demo-loc").innerHTML = response.location[0].location.display;
+                document.getElementById("demo-fin").innerHTML = response.identifier[0].value;
                 document.getElementById("demo-rfv").innerHTML = response.reason[0].text
 
         });
